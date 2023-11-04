@@ -5,8 +5,8 @@ abstract class Enemy {
     int height;
 
     public Enemy(int weight, int height){
-        this.weight = weight;
-        this.height = height;
+        this.weight = getWeight();
+        this.height = getHeight();
     }
 
     public int getWeight(){

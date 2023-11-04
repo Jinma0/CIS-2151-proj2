@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Goblin extends Enemy{
     public Goblin(int weight, int height) {
-        super(weight, height);
+        super(new Random().nextInt(6) + 5, new Random().nextInt(31) + 70);
     }
 
     @Override
@@ -12,13 +12,13 @@ public class Goblin extends Enemy{
         System.out.println("Gurgle!");
     }
 
-    int minimumWeight = 5;
-    int maximumWeight = 10;
+    @Override
+    public void setWeight(int weight) {
+        super.setWeight(weight);
+    }
 
-    Random number = new Random();
-
-
-    int randomNumber = number.nextInt(maximumWeight - minimumWeight + 1) + minimumWeight;
-
-
+    @Override
+    public void setHeight(int height){
+        super.setHeight(height);
+    }
 }
