@@ -7,6 +7,8 @@ public class Ogre extends Enemy{
         super(new Random().nextInt(81) + 120, new Random().nextInt(101) + 200);
     }
 
+    public Ogre() {}
+
     @Override
     public void attack() {
         System.out.println("Ugh!");

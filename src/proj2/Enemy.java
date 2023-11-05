@@ -9,6 +9,8 @@ abstract class Enemy {
         this.height = getHeight();
     }
 
+    public Enemy() {}
+
     public int getWeight(){
         return weight;
     }

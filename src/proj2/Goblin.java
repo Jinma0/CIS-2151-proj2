@@ -7,18 +7,10 @@ public class Goblin extends Enemy{
         super(new Random().nextInt(6) + 5, new Random().nextInt(31) + 70);
     }
 
+    public Goblin() {}
+
     @Override
     public void attack() {
         System.out.println("Gurgle!");
-    }
-
-    @Override
-    public void setWeight(int weight) {
-        super.setWeight(weight);
-    }
-
-    @Override
-    public void setHeight(int height){
-        super.setHeight(height);
     }
 }
